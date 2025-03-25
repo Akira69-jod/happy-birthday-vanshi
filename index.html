@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Vanshika</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(45deg, pink, #ff69b4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Hearts */
+        @keyframes float {
+            0% { transform: translateY(100vh) scale(1); opacity: 1; }
+            100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+        .heart {
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 100% 30%, 80% 100%, 50% 80%, 20% 100%, 0% 30%);
+            animation: float 5s infinite linear;
+        }
+        .heart:nth-child(2) { left: 20%; animation-duration: 4s; }
+        .heart:nth-child(3) { left: 40%; animation-duration: 6s; }
+        .heart:nth-child(4) { left: 60%; animation-duration: 7s; }
+        .heart:nth-child(5) { left: 80%; animation-duration: 5s; }
+
+        /* Glowing "I Love You" */
+        @keyframes glowText {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+        .glow-text {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 0 15px red, 0 0 30px pink;
+            animation: glowText 3s infinite;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            color: white;
+            max-width: 95%;
+            margin: auto;
+        }
+        .note, .facts, .things-love, .ending-note {
+            background: radial-gradient(circle, #ff3366, #cc0055);
+            padding: 30px;
+            margin: 15px auto;
+            width: 95%;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 0 15px rgba(255, 0, 102, 0.6);
+        }
+        .pictures {
+            margin: 15px auto;
+            padding: 15px;
+            background: radial-gradient(circle, #ff6699, #cc3366);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 102, 0.6);
+        }
+        .pictures img {
+            width: 90%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 600px) {
+            .note, .facts, .things-love, .ending-note {
+                padding: 20px;
+            }
+            .pictures img {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-text">I LOVE YOU ❤️</div>
+
+    <!-- Animated Hearts -->
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+
+    <div class="content">
+        <h1>Happy Birthday My Love Vanshika! ❤️</h1>
+        
+        <div class="note">
+            <h2>A Special Note</h2>
+            <p style="font-size: 18px; line-height: 1.6;">
+                Happy happy happy birthday my cuitiepie! You're my fav person ever yaar. 
+                Tujhse kuch bhi share kr skta hun, kuch bhi bol skta hun, itna accha feel hota haina.
+                Pta nhi kyu tujhse milne ke baad duniya alag si hogyi hai, although kaafi restrictions hai I love it ngl. 
+                Aur mujhe mera forever bestie bhi mil gyi toh isse accha kya hoga. Almost 3 saal hone wala hai relationship ko 
+                and ye bohot hee chota milestone hai, at least death tak toh sath rehna hai XD, uske baad bhi reh lenge tu bole toh.
+                Tu itni choti si hai still itna bada impact la diya mere life me, thank u so much.
+                Bohot relaxing feel hota hai terese baat krke, accha sa lgta hai, kab ye 3 saal nikal gaye pta bhi nhi chla 
+                and abhi aur jldi niklenge. Although apan mil nhi pa rahe, we are always together. 
+                I hope ye birthday tere puichle saare birthday se accha jaye. 
+                You're my forever love baby ❤️
+            </p>
+        </div>
+        
+        <div class="things-love">
+            <h2>Things I Love About You</h2>
+            <ul style="text-align: left; font-size: 18px;">
+                <li>Your cute smile that makes my day brighter ❤️</li>
+                <li>The way you always understand me without me saying a word 😊</li>
+                <li>Your endless support and love 💕</li>
+                <li>How you make every moment special 😍</li>
+                <li>The way you laugh, it's just magical 😘</li>
+            </ul>
+        </div>
+        
+        <div class="pictures">
+            <h2>Some Beautiful Moments of Yours</h2>
+            <img src="IMG_20221231_153357_986.jpg" alt="Vanshika 1">
+            <img src="IMG_20230214_121704.jpg" alt="Vanshika 2">
+            <img src="Snapchat-104440634.jpg" alt="Vanshika 3">
+        </div>
+        
+        <div class="ending-note">
+            <h2>Ending Note</h2>
+            <p>
+                Thank you for being the most amazing person in my life. Every moment with you is precious, 
+                and I cherish you more than words can express. I can't wait to create more memories 
+                and spend countless birthdays together and enjoy your day at fullest. I love you forever, Vanshika! ❤️
+            </p>
+        </div>
+    </div>
+</body>
+</html>
